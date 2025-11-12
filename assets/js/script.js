@@ -35,10 +35,20 @@ function checkFizzBuzz(square, number, divisorFizz, divisorBuzz) {
   }
 }
 
+
+function btnGenerateOnClick(){
+  const container = document.querySelector(".container")
+  const inputDimension = document.getElementById("size").value
+  const inputFizz = document.getElementById("fizz-divisor").value
+  const inputBuzz = document.getElementById("buzz-divisor").value
+  
+  container.innerHTML=""
+  createMatrix(inputDimension,container,inputFizz,inputBuzz)
+}
+
+
 document.addEventListener("DOMContentLoaded",function(){
-    const container = document.querySelector(".container")
-    createMatrix(5,container,2,3)
+    const bntGenerate = document.getElementById("generate-btn");
+    bntGenerate.addEventListener("click",btnGenerateOnClick);
 })
-
-
 

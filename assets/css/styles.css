@@ -1,35 +1,88 @@
-.container{
+body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: fuchsia;
+}
 
+h1{
+   padding: 20px;
+}
+
+.container{
+    border-top: 1px solid rgb(0, 0, 0);
+    padding: 5px;
 }
 
 .demo{
     padding: 20px;
-    background-color: aqua;
     gap: 15px;
     display: flex;
 }
 
+#controls{
+    margin: 10px;
+    display: flex;
+}
+
+.input-group{
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.input-group input{
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.input-group button{
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color:cornflowerblue;
+    border: 1px solid rgb(74, 110, 177);
+    border-radius: 5px;
+}
+
+.input-group button:hover{
+    background-color: royalblue;
+}
+
+
 .content{
     display: flex;
-    height: 50px;
-    width: 50px;
-    border: 1px solid aqua;
+    height: 70px;
+    width: 70px;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
     align-items: center;
     justify-content: center;
     transition: background-color 0.5s, transform 0.5s;
+    cursor: pointer;
 }
 
+.content:hover{
+    background-color: lightgray;
+}
+
+.fizz{
+    background-color: blanchedalmond;
+}
 .fizz:hover{
-    background-color: beige;
+    background-color:rgb(226, 208, 180);
 }
 
+.buzz{
+    background-color: rgb(248, 194, 173);
+}
 .buzz:hover{
     transform: translateY(5px);
+    background-color: rgb(221, 140, 108);
+}
+
+.fizzBuzz{
+    background-color: rgb(176, 150, 228);
 }
 
 .fizzBuzz:hover{
     transform: rotate(5deg);
+    background-color: mediumpurple;
 }
+
